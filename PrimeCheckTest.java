@@ -46,7 +46,7 @@ public class PrimeCheckTest {
  1823,  1831,  1847,  1861,  1867,  1871,  1873,  1877,  1879,  1889,  1901,  1907,  1913,  1931,
  1933,  1949,  1951,  1973,  1979,  1987,  1993,  1997,  1999,  2003,  2011,  2017,  2027,  2029};
     for(int i = 0; i < prim.length -1; i++) {
-      assertTrue(i + " should have it's prime time right _now_ but you said noo", PrimeCheck.isPrime(prim[i]));
+      assertTrue("should have it's prime time right _now_ but you said noo", PrimeCheck.isPrime(prim[i]));
     }
   }
 
@@ -55,7 +55,7 @@ public class PrimeCheckTest {
   public void testNonPrimes() {
     /* ToDo: insert a test here */
     for(int i = 4; i <= 20 -1; i+=2) {
-      assertFalse(i + " should not be a prime, but was rated one", PrimeCheck.isPrime(i));
+      assertFalse("should not be a prime, but was rated one", PrimeCheck.isPrime(i));
     }
     
   }
