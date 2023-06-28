@@ -55,7 +55,7 @@ public class PrimeCheckTest {
   @Test
   public void testNonPrimes() {
     /* ToDo: insert a test here */
-    for(int i = 4; i <= 20 -1; i+2) {
+    for(int i = 4; i <= 20 -1; ++i++) {
       assertFalse(i + " should not be a prime, but was rated one", PrimeCheck.isPrime(i));
     }
     
